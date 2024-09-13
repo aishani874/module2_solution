@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="device-width, initial scale=1">
+<title>Module2_Assignment</title>
+<style>
+
+* {
+  font-family: Times New Roman;
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+  margin-right:2px;
+  margin-left:2px;
+  text-align:center;
+}
+
+span{
+  position:relative;
+}
+
+section {
+  outline-color: white;
+  border:1px white;
+  padding:10px;
+  padding-top:50px;
+  width:8.33%;
+  float:left;
+  position:relative;
+  background-color:grey;
+  padding:10px;
+  padding-top:60px;
+  margin-bottom:8px;
+  margin-left:2px;
+  margin-right:2px;
+}
+
+div.container > section {
+  border:solid black;
+}
+
+p {
+  border:2px solid black;
+  background-color:grey;
+  width:90%;
+  height:150px;
+  margin-right:auto;
+  margin-left:auto;
+  font:Helvetica;
+  color:black;
+  text-align:center;
+  font-stretch: 100%;
+  border:grey;
+  font-weight:bold;
+}
+section > span > p {
+  padding-top:7px;
+  border: 2px solid black;
+  left: 252px;
+  width:35%;
+  height:30%;
+  font-size:20px;
+  font-weight:bold;
+  text-align:center;
+}
+span{
+  position:absolute;
+  top:-21px;
+  right:-1px;
+}
+span .head1{
+  width:143px;
+  height:40px;
+  background-color:orange;
+  }
+span .head2{
+  background-color:purple;
+  width:143px;
+  height:40px;
+  color:white;
+  font-weight:bold;
+}
+span .head3{
+  background-color:pink;
+  width:143px;
+  height:40px;
+}
+@media (max-width: 767px) {
+  section {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  section.S1 {
+    width: 49%;
+    height:30%;
+  }
+
+  section.S2 {
+    width: 49%;
+  }
+  section.S3 {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 992px) {
+  section.S1 {
+    width: 32.33%;
+  }
+
+  section.S2 {
+    width: 32.33%;
+  }
+  section.S3 {
+    width: 32.33%;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+<div class="container">
+  <section class="S1">
+    <span><p class="head1">Chicken</p></span>    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </section>
+  <section class="S2">
+    <span><p class="head2">Beef</p></span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </section>
+  <section class="S3">
+    <span><p class="head3">Sushi</p></span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </section>
+</div>
+</body>
+</html>
